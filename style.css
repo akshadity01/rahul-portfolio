@@ -28,12 +28,6 @@ header {
 
 .navbar {
     width: 98%;
-   
-  
-}
-
-nav ul{
-    display: none;
 }
 
 nav ul li {
@@ -66,7 +60,7 @@ nav h1:hover{
     text-shadow: -1px 1px 2px #f5c310;
 }
 
-nav .linecont{
+.linecont{
     height: 25px;
     display: flex;
     justify-content: space-evenly;
@@ -75,11 +69,7 @@ nav .linecont{
     cursor: pointer;
 }
 
-.linecont.hidden{
-    display: none;
-}
-
-nav .line{
+.linecont .line{
     height: 2px;
     width: 26px;
     background-color: #000;
@@ -98,8 +88,7 @@ nav .line{
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-nav ul.navlist{
-    display: block;
+.navlist{
     position: fixed;
     top: 110px;
     right: 60px;
@@ -109,14 +98,33 @@ nav ul.navlist{
     flex-direction: column;
     background-color: #f5c310;
 }
-
+/* 
+.show-nav {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #f5c310;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+} */
+ 
 @media (max-width: 430px) {
-    .navlist{
+    .show-nav {
+        display: flex !important;
+    }
+    nav ul{
         display: none;
     }
-
 }
 
+@media (min-width: 430px) {
+    .linecont{
+        display: none;
+    }
+}
 .container {
     width: 85%;
     height: 80vh;
@@ -186,6 +194,7 @@ nav ul.navlist{
 .contactbtn:hover{
     transform: scale(1.1,1.1);
     box-shadow: 0 0 10px;
+    background-color: #f5c310;
 }
 
 .btnclick::before{
