@@ -135,7 +135,6 @@ nav h1 a{
     box-shadow: -4px 4px 10px rgba(0, 0, 0, .6);
     flex-direction: column;
     position: relative;
-
 }
 
 .mini-cont {
@@ -298,11 +297,29 @@ main {
 @media (max-width: 500px) {
     .mini-cont{
         flex-direction: column-reverse;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
     }
-
-    .container{
+    
+    header{
         height: 100vh;
         width: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+    }
+
+    .contactbtn{
+        margin-left: .4rem;
+    }
+
+    .social{
+        position: absolute;
+        bottom: 8px;
+        right: 20px;
     }
 }
 
@@ -313,7 +330,7 @@ main {
     }
 
     .mini-cont {
-        flex-direction: column;
+        flex-direction: column-reverse;
         padding: 20px;
     }
 
@@ -338,12 +355,13 @@ main {
         width: 100%;
         height: 200px;
     }
+
 }
 
 @media (max-width: 1024px) {
     .container {
-        width: 95%;
-        height: auto;
+        width: 85%;
+        height: 80vh;
     }
 
     .portImage {
@@ -358,5 +376,9 @@ main {
     .video iframe {
         width: 100%;
         height: auto;
+    }
+
+    .mini-cont{
+        margin: 5px;
     }
 }
