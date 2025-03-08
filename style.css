@@ -33,6 +33,7 @@ header {
 nav ul li {
     display: inline-block;
     list-style: none;
+    font-weight: 550;
 }
 
 nav ul li a {
@@ -58,6 +59,7 @@ nav a:hover{
 
 nav h1{
     margin-top: 5px;
+    border-radius: 5px;
 }
 nav h1 a{
     text-decoration: none;
@@ -183,14 +185,14 @@ nav h1 a{
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
-    box-shadow: 0 0 5px;
+    box-shadow: -1px 1px 7px rgba(0, 0, 0, .5);
     z-index: 1;
     position: relative;
 }
 
 .contactbtn:hover{
-    transform: scale(1.1,1.1);
-    box-shadow: 0 0 10px;
+    transform: scale(1.05,1.05);
+    box-shadow: -1px 1px 7px rgba(0, 0, 0, .5);
     background-color: #f5c310;
 }
 
@@ -300,7 +302,7 @@ main {
         height: 100%;
         width: 100%;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
     }
     
     header{
@@ -318,7 +320,7 @@ main {
 
     .social{
         position: absolute;
-        bottom: 8px;
+        bottom: 20px;
         right: 20px;
     }
 }
