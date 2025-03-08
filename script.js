@@ -8,5 +8,5 @@ hambgr.addEventListener("click", () => {
     line1.classList.toggle("line1click");
     line2.classList.toggle("line2click");
     line3.classList.toggle("line3click");
-    navList.classList.toggle("navlist");
+    navList.classList.toggle("display");
 });
